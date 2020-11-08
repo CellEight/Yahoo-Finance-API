@@ -70,8 +70,10 @@ class YahooStock():
         plt.show()
 
 if __name__ == "__main__":
+    #Just example code to illustrate how the API can be used
     stock = YahooStock()
     data = stock.getHistoricalData('AMD')
     print(data)
+    # Note polymorphism
     stock.plotStock('AMD',['Open','Close'])
     stock.plotStock('AMD','Volume')
