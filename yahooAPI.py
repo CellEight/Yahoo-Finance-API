@@ -81,6 +81,6 @@ if __name__ == "__main__":
     # Get historical Data
     data = stock.getHistoricalData('AMD')
     print(data)
-    # Note polymorphism
+    # Plot historical data (Note function overloading)
     stock.plotStock('AMD',['Open','Close'])
     stock.plotStock('AMD','Volume')
