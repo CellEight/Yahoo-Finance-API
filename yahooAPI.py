@@ -72,6 +72,13 @@ class YahooStock():
 if __name__ == "__main__":
     #Just example code to illustrate how the API can be used
     stock = YahooStock()
+    # Get current price
+    price = stock.getPrice('AMD')
+    print(price)
+    # Get Stock price and meta data
+    meta_data = stock.getDetails('AMD')
+    print(meta_data)
+    # Get historical Data
     data = stock.getHistoricalData('AMD')
     print(data)
     # Note polymorphism
